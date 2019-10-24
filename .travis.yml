@@ -2,9 +2,9 @@ language: elixir
 
 matrix:
   include:
-    - elixir: 1.8.x
+    - elixir: 1.8
       otp_release: 21.0
-    - elixir: 1.9.x
+    - elixir: 1.9
       otp_release: 22.0
 
 # TODO: deploy
