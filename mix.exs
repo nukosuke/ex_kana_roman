@@ -4,7 +4,7 @@ defmodule KanaRoman.MixProject do
   def project do
     [
       app: :kana_roman,
-      version: "0.1.0",
+      version: "0.0.0",
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       deps: deps()
