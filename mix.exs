@@ -7,6 +7,8 @@ defmodule KanaRoman.MixProject do
       version: "0.0.0",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
+      description: "カタカナ => ローマ字 変換",
+      package: package(),
       deps: deps()
     ]
   end
@@ -18,11 +20,17 @@ defmodule KanaRoman.MixProject do
     ]
   end
 
+  def package do
+    [
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/nukosuke/ex_kana_roman"}
+    ]
+  end
+
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 end
