@@ -1,5 +1,7 @@
 # KanaRoman
+[![hex.pm](https://img.shields.io/hexpm/v/kana_roman)](https://hex.pm/packages/kana_roman)
 [![Build Status](https://travis-ci.com/nukosuke/ex_kana_roman.svg?branch=master)](https://travis-ci.com/nukosuke/ex_kana_roman)
+[![MIT License](https://img.shields.io/hexpm/l/kana_roman)](./LICENSE)
 
 カタカナ => ローマ字 変換
 
