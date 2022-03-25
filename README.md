@@ -13,7 +13,7 @@ by adding `kana_roman` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:kana_roman, "~> 0.0.0"}
+    {:kana_roman, "~> 0.1.0"}
   ]
 end
 ```
