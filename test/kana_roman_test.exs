@@ -3,13 +3,25 @@ defmodule KanaRomanTest do
   doctest KanaRoman
 
   describe "to_roman/1" do
-    test "convert correctly" do
-      assert {:ok, "nukosuke"} = "ヌコスケ" |> KanaRoman.to_roman()
-      assert {:ok, "tamura"} = "タムラ" |> KanaRoman.to_roman()
-      assert {:ok, "yosuke"} = "ヨウスケ" |> KanaRoman.to_roman()
-      assert {:ok, "ryosuke"} = "リョウスケ" |> KanaRoman.to_roman()
-      assert {:ok, "ando"} = "アンドウ" |> KanaRoman.to_roman()
-      assert {:ok, "hattori"} = "ハットリ" |> KanaRoman.to_roman()
+    @patterns [
+      {"nukosuke", "ヌコスケ"},
+      {"tamura", "タムラ"},
+      {"yosuke", "ヨウスケ"},
+      {"ryosuke", "リョウスケ"},
+      {"ando", "アンドウ"},
+      {"hattori", "ハットリ"},
+      {"juwhon", "ジュウォン"},
+      {"vindika", "ヴィンヂカ"},
+      {"hoxonbai", "ホォンバイ"},
+      {"dovoruzaku", "ドヴォルザーク"},
+      {"fuxuxan", "フゥァン"},
+      {"kyaxyan", "キャャン"}
+    ]
+
+    for {expected, katakana} <- @patterns do
+      test "convert correctly: #{katakana} to #{expected}" do
+        assert {:ok, unquote(expected)} = KanaRoman.to_roman(unquote(katakana))
+      end
     end
   end
 end

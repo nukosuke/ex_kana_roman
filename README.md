@@ -24,5 +24,5 @@ be found at [https://hexdocs.pm/kana_roman](https://hexdocs.pm/kana_roman).
 
 ## License
 
-MIT License  
+MIT License
 See the file [LICENSE](./LICENSE)
