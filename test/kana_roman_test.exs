@@ -9,7 +9,13 @@ defmodule KanaRomanTest do
       {"yosuke", "ヨウスケ"},
       {"ryosuke", "リョウスケ"},
       {"ando", "アンドウ"},
-      {"hattori", "ハットリ"}
+      {"hattori", "ハットリ"},
+      {"juwhon", "ジュウォン"},
+      {"vindika", "ヴィンヂカ"},
+      {"hoxonbai", "ホォンバイ"},
+      {"dovoruzaku", "ドヴォルザーク"},
+      {"fuxuxan", "フゥァン"},
+      {"kyaxyan", "キャャン"}
     ]
 
     for {expected, katakana} <- @patterns do
