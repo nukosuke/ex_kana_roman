@@ -1,6 +1,8 @@
 defmodule KanaRoman do
   @moduledoc """
   カタカナをローマ字表記に変換するモジュール。
+
+  cf. https://support.microsoft.com/ja-jp/help/883232
   """
 
   @triple_katakana_map %{
