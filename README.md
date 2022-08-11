@@ -1,9 +1,16 @@
 # KanaRoman
 [![hex.pm](https://img.shields.io/hexpm/v/kana_roman)](https://hex.pm/packages/kana_roman)
-[![Build Status](https://travis-ci.com/nukosuke/ex_kana_roman.svg?branch=master)](https://travis-ci.com/nukosuke/ex_kana_roman)
+[![CI](https://github.com/nukosuke/ex_kana_roman/actions/workflows/ci.yml/badge.svg)](https://github.com/nukosuke/ex_kana_roman/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/hexpm/l/kana_roman)](./LICENSE)
 
 カタカナ => ローマ字 変換
+
+## Usage
+
+```ex
+iex(1)> KanaRoman.to_roman("ヌコスケ")
+{:ok, "nukosuke"}
+```
 
 ## Installation
 
