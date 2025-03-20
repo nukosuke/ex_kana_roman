@@ -5,8 +5,15 @@
 
 version: 2
 updates:
-  - package-ecosystem: "mix" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "mix"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "10:00"
+      timezone: "Asia/Tokyo"
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
       interval: "weekly"
       day: "monday"
